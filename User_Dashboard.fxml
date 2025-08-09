@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="668.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library_management_system.UserDashboardController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" prefHeight="90.0" prefWidth="682.0" style="-fx-background-color: #ADD8E6;" text="Library Management System" textFill="#030101">
+         <font>
+            <Font name="Arial Bold" size="39.0" />
+         </font>
+      </Label>
+      <ListView fx:id="detailsview" layoutX="14.0" layoutY="177.0" onMouseClicked="#handlePDFClick" prefHeight="266.0" prefWidth="308.0" />
+      <TextField fx:id="searchhere" layoutX="350.0" layoutY="179.0" prefHeight="63.0" prefWidth="258.0" promptText="Search Book" />
+      <Button fx:id="search" layoutX="350.0" layoutY="262.0" mnemonicParsing="false" onAction="#searchbtn" prefHeight="26.0" prefWidth="109.0" text="Search" />
+      <Button fx:id="logout2" layoutX="524.0" layoutY="262.0" mnemonicParsing="false" onAction="#logoutbtn2" prefHeight="26.0" prefWidth="84.0" text="Exit" />
+      <Label alignment="CENTER" layoutX="120.0" layoutY="131.0" prefHeight="18.0" prefWidth="94.0" text="Book List">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label11" alignment="CENTER" layoutY="485.0" prefHeight="59.0" prefWidth="682.0" style="-fx-background-color: #B0E0E6;" text="Library Management System">
+         <font>
+            <Font name="System Italic" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
